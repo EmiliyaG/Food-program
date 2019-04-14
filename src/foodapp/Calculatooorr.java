@@ -5,15 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculatooorr extends Design {
-    public void nz() {
-        JPanel calculatorPanel = new JPanel();
-        calculatorPanel.setBounds(10, 78, 244, 322);
-        calculatorPanel.setBorder(new LineBorder(new Color(0, 0, 0), 3));
-        calculatorPanel.setBackground(new Color(220, 220, 220));
-        backgroundPanel.add(calculatorPanel);
-        calculatorPanel.setLayout(null);
-
+public class Calculatooorr extends Panels{
+    public static void nz() {
         JButton btnPlusMinus = new JButton("\u00B1");
         btnPlusMinus.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {

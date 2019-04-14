@@ -6,13 +6,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TotalPrice extends Design{
-    public void makeHomeDelivery(){
+public class TotalPrice extends Panels{
+
+    public static void makeHomeDelivery() {
         chckbxHomeDelivery = new JCheckBox("Home delivery");
         chckbxHomeDelivery.setBounds(10, 7, 97, 23);
         taxPanel.add(chckbxHomeDelivery);
     }
-    public void calcPrice(){
+
+    public static void calcPrice() {
 
         JLabel lblCostOfMeals = new JLabel("Cost of meal:");
         lblCostOfMeals.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -29,18 +31,18 @@ public class TotalPrice extends Design{
         lblCostOfDelivery.setBounds(436, 83, 107, 25);
         taxPanel.add(lblCostOfDelivery);
 
-        JLabel lblMeals = new JLabel("0.0");
+        lblMeals = new JLabel("0.0");
         lblMeals.setForeground(new Color(0, 0, 0));
         lblMeals.setFont(new Font("Tahoma", Font.PLAIN, 14));
         lblMeals.setBounds(553, 11, 66, 25);
         taxPanel.add(lblMeals);
 
-        JLabel lblDrinks = new JLabel("0.0");
+         lblDrinks = new JLabel("0.0");
         lblDrinks.setFont(new Font("Tahoma", Font.PLAIN, 14));
         lblDrinks.setBounds(553, 47, 89, 25);
         taxPanel.add(lblDrinks);
 
-        JLabel lblDelivery = new JLabel("0.0");
+         lblDelivery = new JLabel("0.0");
         lblDelivery.setFont(new Font("Tahoma", Font.PLAIN, 14));
         lblDelivery.setBounds(553, 83, 89, 25);
         taxPanel.add(lblDelivery);
@@ -50,7 +52,7 @@ public class TotalPrice extends Design{
         lblTotalTax.setBounds(627, 11, 78, 25);
         taxPanel.add(lblTotalTax);
 
-        JLabel lblTotal = new JLabel("0.0");
+        lblTotal = new JLabel("0.0");
         lblTotal.setFont(new Font("Tahoma", Font.PLAIN, 14));
         lblTotal.setBounds(715, 11, 77, 25);
         taxPanel.add(lblTotal);
@@ -63,8 +65,6 @@ public class TotalPrice extends Design{
                 double allBurgers = priceBurger * chooseBurger;
                 String burger = String.format("%.2f", allBurgers);
                 lblMeals.setText(burger);
-
-
             }
         });
         btnTotal.setFont(new Font("Tahoma", Font.BOLD, 15));

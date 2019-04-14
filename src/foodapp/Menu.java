@@ -5,7 +5,7 @@ import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 
-public class Menu extends Design {
+public class Menu extends Panels {
     public JLabel burger;
     public JLabel pizza;
     public JLabel hotDog;
@@ -23,12 +23,6 @@ public class Menu extends Design {
     public JLabel lblCoffee;
 
     public void createLabels() {
-        menuPanel = new JPanel();
-        menuPanel.setBounds(543, 78, 269, 322);
-        menuPanel.setBorder(new LineBorder(new Color(0, 0, 0), 3));
-        menuPanel.setBackground(new Color(220, 220, 220));
-        backgroundPanel.add(menuPanel);
-        menuPanel.setLayout(null);
 
         lblMenu = new JLabel("Menu");
         lblMenu.setFont(new Font("Tahoma", Font.ITALIC, 20));

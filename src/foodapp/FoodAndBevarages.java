@@ -3,8 +3,8 @@ package foodapp;
 import javax.swing.*;
 import java.awt.*;
 
-public class FoodAndBevarages extends Design {
-    public void makeFoodLabels(){
+public class FoodAndBevarages extends Panels{
+    public static void makeFoodLabels(){
         JLabel lblFood = new JLabel("Food");
         lblFood.setFont(new Font("Tahoma", Font.ITALIC, 20));
         lblFood.setBounds(20, 11, 67, 25);
@@ -55,7 +55,7 @@ public class FoodAndBevarages extends Design {
         foodAndBevaragesPanel.add(lblBeverages);
         lblBeverages.setFont(new Font("Tahoma", Font.ITALIC, 20));
     }
-    public void makeTakoaZaBelivery(){
+    public static void makeTakoaZaBelivery(){
         comboBox1 = new JComboBox();
         comboBox1.setBounds(20, 227, 219, 36);
         foodAndBevaragesPanel.add(comboBox1);
