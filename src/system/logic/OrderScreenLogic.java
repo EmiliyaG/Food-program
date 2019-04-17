@@ -4,7 +4,6 @@ import system.ui.OrderScreen;
 
 public class OrderScreenLogic {
     private OrderScreen orderScreen;
-
     public void setScreenLisener(OrderScreen orderScreen){
         this.orderScreen = orderScreen;
     }

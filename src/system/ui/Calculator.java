@@ -2,6 +2,7 @@ package system.ui;
 
 import foodapp.*;
 import system.data.ProductsRepository;
+import system.logic.CalculatorLogic;
 import system.logic.OrderScreenLogic;
 
 import java.awt.EventQueue;
@@ -22,213 +23,308 @@ import javax.swing.JCheckBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Calculator extends OrderScreen {
-    public void nz() {
-        JButton btnPlusMinus = new JButton("\u00B1");
-        btnPlusMinus.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnPlusMinus.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnPlusMinus.setBounds(122, 257, 56, 50);
-        calculatorPanel.add(btnPlusMinus);
+public class Calculator {
 
-        JButton btn0 = new JButton("0");
-        btn0.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btn0.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btn0.setBounds(10, 257, 56, 50);
-        calculatorPanel.add(btn0);
+    public String enterNumber;
+    public JButton btn1;
+    public JButton btn2;
+    public JButton btn3;
+    public JButton btn4;
+    public JButton btn5;
+    public JButton btn6;
+    public JButton btn7;
+    public JButton btn8;
+    public JButton btn9;
+    public JButton btnPlusMinus;
+    public JButton btn0;
+    public JButton btnDot;
+    public JButton btnEqual;
+    public JButton btnDiv;
+    public JButton btnMult;
+    public JButton btnMinus;
+    public JButton btnPlus;
+    public JButton btnPercent;
+    public JButton btnClearAll;
+    public JButton btnClearOne;
+    private OrderScreen orderScreen;
+    public CalculatorLogic logicCalculator;
+    public JTextField display;
 
-        JButton btnDot = new JButton(".");
-        btnDot.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnDot.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnDot.setBounds(66, 257, 56, 50);
-        calculatorPanel.add(btnDot);
+    public void setScreenLisenerCalculator(OrderScreen orderScreen) {
+        this.orderScreen = orderScreen;
+    }
 
-        JButton btnEqual = new JButton("=");
-        btnEqual.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnEqual.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnEqual.setBounds(178, 257, 56, 50);
-        calculatorPanel.add(btnEqual);
-
-        JButton btnDiv = new JButton("/");
-        btnDiv.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnDiv.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnDiv.setBounds(178, 207, 56, 50);
-        calculatorPanel.add(btnDiv);
-
-        JButton btnMult = new JButton("*");
-        btnMult.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnMult.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnMult.setBounds(178, 156, 56, 50);
-        calculatorPanel.add(btnMult);
-
-        JButton btnMinus = new JButton("-");
-        btnMinus.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnMinus.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnMinus.setBounds(178, 105, 56, 50);
-        calculatorPanel.add(btnMinus);
-
-        JButton btnPlus = new JButton("+");
-        btnPlus.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnPlus.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnPlus.setBounds(178, 54, 56, 50);
-        calculatorPanel.add(btnPlus);
-
-        textField = new JTextField();
-        textField.setHorizontalAlignment(SwingConstants.RIGHT);
-        textField.setColumns(10);
-        textField.setBounds(10, 11, 224, 39);
-        calculatorPanel.add(textField);
-
-        JButton btnPercent = new JButton("%");
-        btnPercent.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnPercent.setFont(new Font("Tahoma", Font.BOLD, 18));
-        btnPercent.setBounds(122, 54, 56, 50);
-        calculatorPanel.add(btnPercent);
-
-        JButton btnClearAll = new JButton("C");
-        btnClearAll.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnClearAll.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnClearAll.setBounds(66, 54, 56, 50);
-        calculatorPanel.add(btnClearAll);
-
-        JButton btnClearOne = new JButton("<-");
-        btnClearOne.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btnClearOne.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        btnClearOne.setBounds(10, 54, 56, 50);
-        calculatorPanel.add(btnClearOne);
-
-        JButton btn7 = new JButton("7");
-        btn7.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btn7.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btn7.setBounds(10, 105, 56, 50);
-        calculatorPanel.add(btn7);
-
-
-        makeButton1();
+    public void callButtons() {
+        this.logicCalculator = new CalculatorLogic();
+        logicCalculator.setScreenLisenerLogicCalculator(this);
+        makeBtnPlusMinus();
+        makeBtnDot();
+        makeBtnEqual();
+        makeBtnDiv();
+        makeBtnMult();
+        makeBtnMinus();
+        makeBtnPlus();
+        makeTextField();
+        makeBtnPercent();
+        makeBtnClearAll();
+        makeBtnClearOnlyOneChar();
+        makeBtn0();
+        makeBtn1();
         makeBtn2();
         makeBtn3();
         makeBtn4();
         makeBtn5();
         makeBtn6();
+        makeBtn7();
         makeBtn8();
+        makeBtn9();
+    }
 
-        JButton btn9 = new JButton("9");
+    private void makeBtnPlusMinus() {
+        btnPlusMinus = new JButton("\u00B1");
+        btnPlusMinus.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnPlusMinusSelected();
+            }
+        });
+        btnPlusMinus.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnPlusMinus.setBounds(122, 257, 56, 50);
+        orderScreen.calculatorPanel.add(btnPlusMinus);
+    }
+
+    private void makeBtn0() {
+        btn0 = new JButton("0");
+        btn0.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn0Selected();
+            }
+        });
+        btn0.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btn0.setBounds(10, 257, 56, 50);
+        orderScreen.calculatorPanel.add(btn0);
+    }
+
+    private void makeBtnDot() {
+        btnDot = new JButton(".");
+        btnDot.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnDotSelected();
+            }
+        });
+        btnDot.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnDot.setBounds(66, 257, 56, 50);
+        orderScreen.calculatorPanel.add(btnDot);
+    }
+
+    private void makeBtnEqual() {
+        btnEqual = new JButton("=");
+        btnEqual.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnEqualSelected();
+            }
+        });
+        btnEqual.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnEqual.setBounds(178, 257, 56, 50);
+        orderScreen.calculatorPanel.add(btnEqual);
+    }
+
+    private void makeBtnDiv() {
+        btnDiv = new JButton("/");
+        btnDiv.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnDivSelected();
+            }
+        });
+        btnDiv.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnDiv.setBounds(178, 207, 56, 50);
+        orderScreen.calculatorPanel.add(btnDiv);
+    }
+
+    private void makeBtnMult() {
+        btnMult = new JButton("*");
+        btnMult.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnMultSelected();
+            }
+        });
+        btnMult.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnMult.setBounds(178, 156, 56, 50);
+        orderScreen.calculatorPanel.add(btnMult);
+    }
+
+    private void makeBtnMinus() {
+        btnMinus = new JButton("-");
+        btnMinus.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnMinusSelected();
+            }
+        });
+        btnMinus.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnMinus.setBounds(178, 105, 56, 50);
+        orderScreen.calculatorPanel.add(btnMinus);
+    }
+
+    private void makeBtnPlus() {
+        btnPlus = new JButton("+");
+        btnPlus.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnPlusSelected();
+            }
+        });
+        btnPlus.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnPlus.setBounds(178, 54, 56, 50);
+        orderScreen.calculatorPanel.add(btnPlus);
+    }
+
+    private void makeTextField() {
+        logicCalculator.display = new JTextField();
+        logicCalculator.display.setHorizontalAlignment(SwingConstants.RIGHT);
+        logicCalculator.display.setColumns(10);
+        logicCalculator.display.setBounds(10, 11, 224, 39);
+        orderScreen.calculatorPanel.add(logicCalculator.display);
+    }
+
+    private void makeBtnPercent() {
+        btnPercent = new JButton("%");
+        btnPercent.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnPercentSelected();
+            }
+        });
+        btnPercent.setFont(new Font("Tahoma", Font.BOLD, 18));
+        btnPercent.setBounds(122, 54, 56, 50);
+        orderScreen.calculatorPanel.add(btnPercent);
+    }
+
+    private void makeBtnClearAll() {
+        btnClearAll = new JButton("C");
+        btnClearAll.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnClearAllSelected();
+            }
+        });
+        btnClearAll.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnClearAll.setBounds(66, 54, 56, 50);
+        orderScreen.calculatorPanel.add(btnClearAll);
+    }
+
+    private void makeBtnClearOnlyOneChar() {
+        btnClearOne = new JButton("<-");
+        btnClearOne.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btnClearOneCharSelected();
+            }
+        });
+        btnClearOne.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnClearOne.setBounds(10, 54, 56, 50);
+        orderScreen.calculatorPanel.add(btnClearOne);
+    }
+
+    private void makeBtn7() {
+        btn7 = new JButton("7");
+        btn7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn7Selected();
+            }
+        });
+        btn7.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btn7.setBounds(10, 105, 56, 50);
+        orderScreen.calculatorPanel.add(btn7);
+    }
+
+    private void makeBtn9() {
+        btn9 = new JButton("9");
         btn9.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn9Selected();
             }
         });
         btn9.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn9.setBounds(122, 105, 56, 50);
-        calculatorPanel.add(btn9);
+        orderScreen.calculatorPanel.add(btn9);
     }
 
-    public void makeBtn8() {
-        JButton btn8 = new JButton("8");
+    private void makeBtn8() {
+        btn8 = new JButton("8");
         btn8.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn8Selected();
             }
         });
         btn8.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn8.setBounds(66, 105, 56, 50);
-        calculatorPanel.add(btn8);
+        orderScreen.calculatorPanel.add(btn8);
     }
 
-    public void makeBtn6() {
-        JButton btn6 = new JButton("6");
+    private void makeBtn6() {
+        btn6 = new JButton("6");
         btn6.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn6Selected();
             }
         });
         btn6.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn6.setBounds(122, 156, 56, 50);
-        calculatorPanel.add(btn6);
+        orderScreen.calculatorPanel.add(btn6);
     }
 
-    public void makeBtn5() {
-        JButton btn5 = new JButton("5");
+    private void makeBtn5() {
+        btn5 = new JButton("5");
         btn5.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn5Selected();
             }
         });
         btn5.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn5.setBounds(66, 156, 56, 50);
-        calculatorPanel.add(btn5);
+        orderScreen.calculatorPanel.add(btn5);
     }
 
-    public void makeBtn4() {
-        JButton btn4 = new JButton("4");
+    private void makeBtn4() {
+        btn4 = new JButton("4");
         btn4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn4Selected();
             }
         });
         btn4.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn4.setBounds(10, 156, 56, 50);
-        calculatorPanel.add(btn4);
+        orderScreen.calculatorPanel.add(btn4);
     }
 
-    public void makeBtn3() {
-        JButton btn3 = new JButton("3");
+    private void makeBtn3() {
+        btn3 = new JButton("3");
         btn3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn3Selected();
             }
         });
         btn3.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn3.setBounds(122, 207, 56, 50);
-        calculatorPanel.add(btn3);
+        orderScreen.calculatorPanel.add(btn3);
     }
 
-    public void makeBtn2() {
-        JButton btn2 = new JButton("2");
+    private void makeBtn2() {
+        btn2 = new JButton("2");
         btn2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn2Selected();
             }
         });
         btn2.setFont(new Font("Tahoma", Font.BOLD, 20));
         btn2.setBounds(66, 207, 56, 50);
-        calculatorPanel.add(btn2);
+        orderScreen.calculatorPanel.add(btn2);
     }
 
-    public void makeButton1() {
-        JButton btn1 = new JButton("1");
+    private void makeBtn1() {
+        btn1 = new JButton("1");
         btn1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                logicCalculator.btn1Selected();
             }
         });
-
+        btn1.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btn1.setBounds(10, 207, 56, 50);
+        orderScreen.calculatorPanel.add(btn1);
     }
 }

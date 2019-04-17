@@ -36,12 +36,13 @@ public class OrderScreen extends JFrame {
     public JTextField txtPizza;
     public JTextField txtBurger;
     public JTextField txtHotDog;
-    public JTextField textField;
+    private JTextField textField;
     public JTextField txtQuantity;
     public JCheckBox chckbxHomeDelivery;
     public JComboBox comboBox1;
     public JPanel foodAndBevaragesPanel;
     public OrderScreenLogic logic;
+    public Calculator calculator;
 
 
     public OrderScreen() {
@@ -51,16 +52,23 @@ public class OrderScreen extends JFrame {
         this.calculatorPanel = setUpCalculatorPanel();
         this.menuPanel = setUpMenuPanel();
         this.foodAndBevaragesPanel = setUpFoodAndBevaragesPanel();
+
         this.logic = new OrderScreenLogic();
         logic.setScreenLisener(this);
+
+        this.calculator = new Calculator();
+        calculator.setScreenLisenerCalculator(this);
+        calculator.callButtons();
         makeBtnClear();
         makeBtnExit();
         createLblFastFood();
         makeSeparator();
+
 //        ProductsRepository productsRepository= new ProductsRepository();
 //        productsRepository.getBelarages();
 //        productsRepository.getFoods();
         setVisible(true);
+
     }
 
     private JPanel setUpMainPanel() {
