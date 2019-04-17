@@ -1,6 +1,7 @@
 package system.ui;
 
 import foodapp.*;
+import system.data.ProductsRepository;
 import system.logic.OrderScreenLogic;
 
 import java.awt.EventQueue;
@@ -56,7 +57,9 @@ public class OrderScreen extends JFrame {
         makeBtnExit();
         createLblFastFood();
         makeSeparator();
-
+//        ProductsRepository productsRepository= new ProductsRepository();
+//        productsRepository.getBelarages();
+//        productsRepository.getFoods();
         setVisible(true);
     }
 

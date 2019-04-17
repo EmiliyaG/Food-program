@@ -8,7 +8,6 @@ public class OrderScreenLogic {
     public void setScreenLisener(OrderScreen orderScreen){
         this.orderScreen = orderScreen;
     }
-
     /*
     this method is executed when the clear button is pressed
      */
