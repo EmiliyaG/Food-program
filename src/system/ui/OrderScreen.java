@@ -1,6 +1,7 @@
 package system.ui;
 
 import foodapp.*;
+import system.logic.OrderScreenLogic;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
@@ -39,6 +40,7 @@ public class OrderScreen extends JFrame {
     public JCheckBox chckbxHomeDelivery;
     public JComboBox comboBox1;
     public JPanel foodAndBevaragesPanel;
+    public OrderScreenLogic logic;
 
 
     public OrderScreen() {
@@ -48,30 +50,25 @@ public class OrderScreen extends JFrame {
         this.calculatorPanel = setUpCalculatorPanel();
         this.menuPanel = setUpMenuPanel();
         this.foodAndBevaragesPanel = setUpFoodAndBevaragesPanel();
-
-//btn clear and exit
+        this.logic = new OrderScreenLogic();
+        logic.setScreenLisener(this);
         makeBtnClear();
         makeBtnExit();
-
-        //tova ne trqbva da e tuk
         createLblFastFood();
         makeSeparator();
-//        food();
-//        total();
-//        calc();
+
         setVisible(true);
     }
 
-    private void makeBtnExit() {
-        JButton btnExit = new JButton("Exit");
-        btnExit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                System.exit(0);
-            }
-        });
-        btnExit.setFont(new Font("Tahoma", Font.BOLD, 15));
-        btnExit.setBounds(113, 80, 154, 30);
-        taxPanel.add(btnExit);
+    private JPanel setUpMainPanel() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100, 100, 839, 585);
+        JPanel contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        setContentPane(contentPane);
+//        setUpMainPanel(contentPane);
+        contentPane.setLayout(null);
+        return contentPane;
     }
 
     private JPanel setUpFoodAndBevaragesPanel() {
@@ -123,48 +120,35 @@ public class OrderScreen extends JFrame {
         return backgroundPanel;
     }
 
-    private JPanel setUpMainPanel() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 839, 585);
-        JPanel contentPane = new JPanel();
-        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-        setContentPane(contentPane);
-//        setUpMainPanel(contentPane);
-        contentPane.setLayout(null);
-        return contentPane;
-    }
-
-//    public void food() {
-//        FoodAndBevarages.makeFoodLabels();
-//        FoodAndBevarages.makeTakoaZaBelivery();
-//    }
-//
-//    public void total() {
-//        TotalPrice.makeHomeDelivery();
-//        TotalPrice.calcPrice();
-//    }
 
     private void makeBtnClear() {
         JButton btnClear = new JButton("Clear");
-        btnClear.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-                txtBurger.setText(null);
-                txtPizza.setText(null);
-                txtHotDog.setText(null);
-                txtFrenchFries.setText(null);
-                txtQuantity.setText(null);
-                comboBox1.setSelectedItem("Select a drink");
-                lblMeals.setText("0.0");
-                lblDrinks.setText("0.0");
-                lblTotal.setText("0.0");
-                lblDelivery.setText("0.0");
-
-
-            }
-        });
+        btnClear.addActionListener(arg0 -> logic.clearButtonSelected());
         btnClear.setFont(new Font("Tahoma", Font.BOLD, 15));
         btnClear.setBounds(113, 44, 154, 30);
         taxPanel.add(btnClear);
+    }
+
+    public void resetUiElements() {
+        txtBurger.setText(null);
+        txtPizza.setText(null);
+        txtHotDog.setText(null);
+        txtFrenchFries.setText(null);
+        txtQuantity.setText(null);
+        comboBox1.setSelectedItem("Select a drink");
+        lblMeals.setText("0.0");
+        lblDrinks.setText("0.0");
+        lblTotal.setText("0.0");
+        lblDelivery.setText("0.0");
+    }
+
+
+    private void makeBtnExit() {
+        JButton btnExit = new JButton("Exit");
+        btnExit.addActionListener(arg0 -> System.exit(0));
+        btnExit.setFont(new Font("Tahoma", Font.BOLD, 15));
+        btnExit.setBounds(113, 80, 154, 30);
+        taxPanel.add(btnExit);
     }
 
     private void makeSeparator() {
