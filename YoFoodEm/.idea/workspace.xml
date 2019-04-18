@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689ea65d-cb9a-4b9e-b120-82329948d350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/Register.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/Login.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,13 +28,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="GUI_DESIGNER_FORM" value="1" />
-          <entry key="JAVA" value="3" />
+          <entry key="GUI_DESIGNER_FORM" value="3" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="117" />
+          <entry key="JAVA" value="313" />
         </counts>
       </usages-collector>
     </session>
@@ -49,21 +42,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/Login.java">
+        <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
+        <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -73,14 +74,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form" />
         <option value="$PROJECT_DIR$/LoginAndRegister/RegisterForm.java" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" />
       </list>
     </option>
   </component>
@@ -130,7 +141,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555611510944" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555613697161" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -149,7 +160,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LoginForm">
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.LoginAndRegister.LoginForm" />
+      <module name="YoFoodEm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.LoginAndRegister.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LoginAndRegister.RegisterForm" />
       <module name="YoFoodEm" />
@@ -163,8 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.RegisterForm" />
+      <item itemvalue="Application.LoginForm" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginForm" />
         <item itemvalue="Application.RegisterForm" />
       </list>
     </recent_temporary>
@@ -238,10 +267,23 @@
     <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

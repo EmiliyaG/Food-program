@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 public class RegisterForm {
     private JTextField usernameField;
     private JTextField nameField;
-    private JTextField SecretQuestion;
     private JTextField answerToSecretQuestion;
     private JButton registerButton;
     private JPasswordField passwordField;
@@ -38,7 +37,7 @@ public class RegisterForm {
         JLabel lblUsername = new JLabel("Username:");
         JLabel lblName = new JLabel("Name:");
         JLabel lblPassword = new JLabel("Password:");
-        JLabel lblSecretQuestion = new JLabel("Secret question:");
+        JLabel lblSecretQuestion = new JLabel("Secret question: What's your favourite colour?");
         JLabel lblAnswerToSecretQuestion = new JLabel("Answer:");
         JTextField txtUsername = new JTextField(20);
         JTextField txtName = new JTextField(20);
