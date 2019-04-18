@@ -1,66 +1,65 @@
 package src.LoginAndRegister;
 
-import LoginAndRegister.RegisterForm;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginForm {
+public class ForgotPasswordForm {
     private JTextField username;
+    private JTextField name;
+    private JTextField answerToSecurityQuestion;
     private JTextField password;
-    private JButton loginButton;
-    private JButton createNewAccountButton;
-    private JButton forgotPasswordButton;
+    private JButton showPasswordButton;
+    private JButton backButton;
 
-    public LoginForm() {
-        loginButton.addActionListener(new ActionListener() {
+    public ForgotPasswordForm() {
+        backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
-        createNewAccountButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        forgotPasswordButton.addActionListener(new ActionListener() {
+        showPasswordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
     }
-
     public static void main(String[] args) {
-        LoginForm gui = new LoginForm();
+        ForgotPasswordForm gui = new ForgotPasswordForm();
         gui.createForm();
     }
 
     public void createForm() {
-        JFrame frame = new JFrame("LoginForm");
+        JFrame frame = new JFrame("ForgotPasswordForm");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 
         JPanel panel = new JPanel();
         JLabel lblUsername = new JLabel("Username:");
-        JLabel lblPassword = new JLabel("Password:");
+        JLabel lblName = new JLabel("Name:");
+        JLabel lblAnswer = new JLabel("Answer to the security question:");
+        JLabel lblPassword = new JLabel("Password: ");
         JTextField txtUsername = new JTextField(20);
+        JTextField txtName = new JTextField(20);
+        JTextField txtAnswer = new JTextField(20);
         JTextField txtPassword = new JTextField(20);
-        loginButton = new JButton("Login");
-        createNewAccountButton = new JButton( "Create new account");
-        forgotPasswordButton = new JButton("Forgot password");
+        showPasswordButton = new JButton("Show password");
+        backButton = new JButton("Back");
         panel.add(lblUsername);
         panel.add(txtUsername);
+        panel.add(lblName);
+        panel.add(txtName);
+        panel.add(lblAnswer);
+        panel.add(txtAnswer);
         panel.add(lblPassword);
         panel.add(txtPassword);
-        panel.add(loginButton);
-        panel.add(createNewAccountButton);
-        panel.add (forgotPasswordButton);
+        panel.add(showPasswordButton);
+        panel.add(backButton);
+
 
         frame.getContentPane().add(BorderLayout.CENTER, panel);
         frame.setSize(200, 200);
@@ -70,19 +69,13 @@ public class LoginForm {
     }
 
     private void implementBtnsAction() {
-        loginButton.addActionListener(new ActionListener() {
+        showPasswordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
-        createNewAccountButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        forgotPasswordButton.addActionListener(new ActionListener() {
+        backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -90,6 +83,7 @@ public class LoginForm {
         });
 
     }
-    }
+}
+
 
 
