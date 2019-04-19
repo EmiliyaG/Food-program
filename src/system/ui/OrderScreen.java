@@ -1,10 +1,9 @@
 package system.ui;
 
-import foodapp.*;
-import system.data.ProductsRepository;
+import system.logic.CalculatorLogic;
+import system.logic.DrinksCalculating;
 import system.logic.OrderScreenLogic;
 
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -12,15 +11,11 @@ import java.awt.Color;
 import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JSeparator;
 import javax.swing.JCheckBox;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class OrderScreen extends JFrame {
     public JLabel lblMeals;
@@ -36,14 +31,16 @@ public class OrderScreen extends JFrame {
     public JTextField txtPizza;
     public JTextField txtBurger;
     public JTextField txtHotDog;
-    private JTextField textField;
     public JTextField txtQuantity;
     public JCheckBox chckbxHomeDelivery;
     public JComboBox comboBox1;
     public JPanel foodAndBevaragesPanel;
     public OrderScreenLogic logic;
     public Calculator calculator;
-
+    public MenuScreen menuScreen;
+    public JButton btnPlusMinus;
+    private CalculatorLogic calculatorLogic;
+    public DrinksCalculating drinksCalculating;
 
     public OrderScreen() {
         this.contentPane = setUpMainPanel();
@@ -56,6 +53,10 @@ public class OrderScreen extends JFrame {
         this.logic = new OrderScreenLogic();
         logic.setScreenLisener(this);
 
+        this.menuScreen = new MenuScreen();
+        menuScreen.setScreenLisener(this);
+        menuScreen.createLabels();
+
         this.calculator = new Calculator();
         calculator.setScreenLisenerCalculator(this);
         calculator.callButtons();
@@ -63,14 +64,22 @@ public class OrderScreen extends JFrame {
         makeBtnExit();
         createLblFastFood();
         makeSeparator();
-
-//        ProductsRepository productsRepository= new ProductsRepository();
-//        productsRepository.getBelarages();
-//        productsRepository.getFoods();
+        createLblMenu();
         setVisible(true);
 
     }
 
+
+
+    public void createLblMenu() {
+        JLabel lblMenu = new JLabel("Menu");
+        lblMenu.setFont(new Font("Tahoma", Font.ITALIC, 20));
+        backgroundPanel.add(lblMenu);
+        lblMenu.setBounds(10, 11, 133, 25);
+
+    }
+
+    //panels
     private JPanel setUpMainPanel() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 839, 585);
@@ -81,7 +90,6 @@ public class OrderScreen extends JFrame {
         contentPane.setLayout(null);
         return contentPane;
     }
-
     private JPanel setUpFoodAndBevaragesPanel() {
         foodAndBevaragesPanel = new JPanel();
         foodAndBevaragesPanel.setBounds(264, 78, 269, 322);
@@ -131,7 +139,7 @@ public class OrderScreen extends JFrame {
         return backgroundPanel;
     }
 
-
+    //clear
     private void makeBtnClear() {
         JButton btnClear = new JButton("Clear");
         btnClear.addActionListener(arg0 -> logic.clearButtonSelected());
@@ -153,15 +161,20 @@ public class OrderScreen extends JFrame {
         lblDelivery.setText("0.0");
     }
 
-
+    //exit
     private void makeBtnExit() {
         JButton btnExit = new JButton("Exit");
-        btnExit.addActionListener(arg0 -> System.exit(0));
+        btnExit.addActionListener(arg0 -> logic.exitBtnSelected());
         btnExit.setFont(new Font("Tahoma", Font.BOLD, 15));
         btnExit.setBounds(113, 80, 154, 30);
         taxPanel.add(btnExit);
     }
 
+    public void exitOfTheProgram() {
+        System.exit(0);
+    }
+
+    //nadpisi
     private void makeSeparator() {
         JSeparator separator = new JSeparator();
         separator.setBounds(10, 65, 802, 2);
@@ -175,6 +188,5 @@ public class OrderScreen extends JFrame {
         lblFastFoods.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 45));
         backgroundPanel.add(lblFastFoods);
     }
-
 }
 

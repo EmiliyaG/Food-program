@@ -13,6 +13,8 @@ public class OrderScreenLogic {
     public void clearButtonSelected() {
         orderScreen.resetUiElements();
     }
-
+public void exitBtnSelected(){
+        orderScreen.exitOfTheProgram();
+}
 
 }

@@ -12,6 +12,9 @@ public class CalculatorLogic {
     public char chaar;
     public JTextField display;
     public double result;
+    public String operations;
+    public OrderScreen orderScreen;
+    public Calculator calculator;
     //    public void makeEqualLogic() {
 //        switch (chaar) {
 //            case '+':
@@ -39,11 +42,11 @@ public class CalculatorLogic {
 //                    return;
 //                }
 //                break;
-    public Calculator calculator;
 
     public void setScreenLisenerLogicCalculator(Calculator calculator) {
         this.calculator = calculator;
     }
+
     /*
     this method is executed when the clear button is pressed
      */
@@ -82,38 +85,101 @@ public class CalculatorLogic {
     public void btn9Selected() {
         display.setText(calculator.enterNumber = display.getText() + calculator.btn9.getText());
     }
+
     public void btn0Selected() {
         display.setText(calculator.enterNumber = display.getText() + calculator.btn0.getText());
     }
+
     public void btnEqualSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnEqual.getText());
+        operations();
     }
+
     public void btnDotSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnDot.getText());
+        display.setText(String.valueOf(firstNumber = Double.parseDouble(display.getText() + ".")));
+        operations = ".";
     }
+
     public void btnPlusSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnPlus.getText());
+        firstNumber = Double.parseDouble(display.getText());
+        display.setText("");
+        operations = "+";
     }
+
     public void btnMinusSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnMinus.getText());
+        firstNumber = Double.parseDouble(display.getText());
+        display.setText("");
+        operations = "-";
     }
+
     public void btnPercentSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnPercent.getText());
+        firstNumber = Double.parseDouble(display.getText());
+        display.setText("");
+        operations = "%";
     }
+
     public void btnDivSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnDiv.getText());
+        display.setText(String.valueOf(firstNumber = Double.parseDouble(display.getText())));
+        display.setText("");
+        operations = "/";
     }
+
     public void btnMultSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnMult.getText());
+        firstNumber = Double.parseDouble(display.getText());
+        display.setText("");
+        operations = "*";
     }
+
     public void btnPlusMinusSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnPlusMinus.getText());
+        double change;
+        change = Double.parseDouble(String.valueOf(display.getText()));
+        change = change * (-1);
+        display.setText(String.valueOf(change));
     }
+
     public void btnClearAllSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnClearAll.getText());
+        display.setText(null);
     }
+
     public void btnClearOneCharSelected() {
-        display.setText(calculator.enterNumber = display.getText() + calculator.btnClearOne.getText());
+        String clearOneChar = null;
+
+        if (display.getText().length() > 0) {
+            StringBuilder strBack = new StringBuilder(display.getText());
+            strBack.deleteCharAt(display.getText().length() - 1);
+            clearOneChar = strBack.toString();
+            display.setText(clearOneChar);
+        }
+    }
+
+    public void operations() {
+        String answer;
+        secondNumber = Double.parseDouble(display.getText());
+        if (operations == "+") {
+            result = firstNumber + secondNumber;
+            answer = String.format("%.2f", result);
+            display.setText(answer);
+
+
+        } else if (operations == "-") {
+            result = firstNumber - secondNumber;
+            answer = String.format("%.2f", result);
+            display.setText(answer);
+
+        } else if (operations == "*") {
+            result = firstNumber * secondNumber;
+            answer = String.format("%.2f", result);
+            display.setText(answer);
+
+        } else if (operations == "/") {
+            result = firstNumber / secondNumber;
+            answer = String.format("%.2f", result);
+            display.setText(answer);
+
+        } else if (operations == "%") {
+            result = firstNumber / 100 + secondNumber/secondNumber -1;
+            answer = String.format("%.2f", result);
+            display.setText(answer);
+        }
     }
 
 }
