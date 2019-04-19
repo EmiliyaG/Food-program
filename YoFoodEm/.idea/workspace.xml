@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689ea65d-cb9a-4b9e-b120-82329948d350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="534" />
+          <entry key="JAVA" value="1332" />
         </counts>
       </usages-collector>
     </session>
@@ -43,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="286">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="165">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="-155">
+              <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -102,11 +100,11 @@
       <list>
         <option value="$PROJECT_DIR$/LoginAndRegister/RegisterForm.java" />
         <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form" />
-        <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" />
-        <option value="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" />
         <option value="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form" />
-        <option value="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java" />
         <option value="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.form" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java" />
+        <option value="$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java" />
       </list>
     </option>
   </component>
@@ -149,7 +147,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555616081946" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555704260317" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -168,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ForgotPasswordForm">
+  <component name="RunManager" selected="Application.RegisterForm">
     <configuration name="ForgotPasswordForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.LoginAndRegister.ForgotPasswordForm" />
       <module name="YoFoodEm" />
@@ -215,8 +213,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ForgotPasswordForm" />
         <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.ForgotPasswordForm" />
         <item itemvalue="Application.LoginForm" />
       </list>
     </recent_temporary>
@@ -291,36 +289,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="165">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
+    <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/RegisterForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginAndRegister/ForgotPasswordForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="-155">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
         </state>
       </provider>
     </entry>

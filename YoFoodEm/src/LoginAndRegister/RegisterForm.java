@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 
 public class RegisterForm {
     private JTextField usernameField;
@@ -27,7 +31,8 @@ public class RegisterForm {
         RegisterForm gui = new RegisterForm();
         gui.createForm();
     }
-    public void createForm (){
+
+    public void createForm() {
         JFrame frame = new JFrame("RegistrationForm");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -61,7 +66,19 @@ public class RegisterForm {
         implementBtnsAction();
 
     }
-
+    private void savingTheRegisterInfo (){
+        File fileWithUsersInformation = new File("informationWithUsersInfo.txt");
+        try {
+            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileWithUsersInformation, true)));
+//            FileWriter writer = new FileWriter("information.txt");
+//            writer.write(getClass().getFields(usernameField));
+            writer.flush();
+            writer.close();
+        }
+        catch (Exception e){
+            System.out.println("Fill in all the fields.");
+        }
+    }
     private void implementBtnsAction() {
         registerButton.addActionListener(new ActionListener() {
             @Override
@@ -70,6 +87,9 @@ public class RegisterForm {
             }
         });
 
+        }
 
     }
-}
+//    goal: da svyrja butonite s klasovete
+// file, koito da zapametqva register infoto i da proverqva pri login dali syshtestvuva s try catch da izpisva invalid usename/password
+

@@ -27,6 +27,7 @@ public class ForgotPasswordForm {
             }
         });
     }
+
     public static void main(String[] args) {
         ForgotPasswordForm gui = new ForgotPasswordForm();
         gui.createForm();

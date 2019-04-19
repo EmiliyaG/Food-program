@@ -52,7 +52,7 @@ public class LoginForm {
         JTextField txtUsername = new JTextField(20);
         JTextField txtPassword = new JTextField(20);
         loginButton = new JButton("Login");
-        createNewAccountButton = new JButton( "Create new account");
+        createNewAccountButton = new JButton("Create new account");
         forgotPasswordButton = new JButton("Forgot password");
         panel.add(lblUsername);
         panel.add(txtUsername);
@@ -60,7 +60,7 @@ public class LoginForm {
         panel.add(txtPassword);
         panel.add(loginButton);
         panel.add(createNewAccountButton);
-        panel.add (forgotPasswordButton);
+        panel.add(forgotPasswordButton);
 
         frame.getContentPane().add(BorderLayout.CENTER, panel);
         frame.setSize(200, 200);
@@ -79,7 +79,7 @@ public class LoginForm {
         createNewAccountButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//                createNewAccountButton.addActionListener(arg0 -> RegisterForm());
             }
         });
         forgotPasswordButton.addActionListener(new ActionListener() {
@@ -90,6 +90,6 @@ public class LoginForm {
         });
 
     }
-    }
+}
 
 
