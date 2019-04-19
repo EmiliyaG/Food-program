@@ -9,39 +9,10 @@ import java.util.jar.JarFile;
 public class CalculatorLogic {
     public double firstNumber;
     public double secondNumber;
-    public char chaar;
     public JTextField display;
     public double result;
     public String operations;
-    public OrderScreen orderScreen;
     public Calculator calculator;
-    //    public void makeEqualLogic() {
-//        switch (chaar) {
-//            case '+':
-//                result = firstNumber + secondNumber;
-//                break;
-//            case '-':
-//                result = firstNumber - secondNumber;
-//                break;
-//            case '*':
-//                result= firstNumber*secondNumber;
-//                break;
-//            case '%':
-//                try {
-//                    result = firstNumber % secondNumber;
-//                } catch (ArithmeticException excp) {
-//                    cl.displayLabel.setText("Divide by 0.");
-//                    return;
-//                }
-//                break;
-//            case '/':
-//                try {
-//                    temp = cl.number / temp;
-//                } catch (ArithmeticException excp) {
-//                    cl.displayLabel.setText("Divide by 0.");
-//                    return;
-//                }
-//                break;
 
     public void setScreenLisenerLogicCalculator(Calculator calculator) {
         this.calculator = calculator;
@@ -142,7 +113,6 @@ public class CalculatorLogic {
 
     public void btnClearOneCharSelected() {
         String clearOneChar = null;
-
         if (display.getText().length() > 0) {
             StringBuilder strBack = new StringBuilder(display.getText());
             strBack.deleteCharAt(display.getText().length() - 1);
@@ -158,7 +128,6 @@ public class CalculatorLogic {
             result = firstNumber + secondNumber;
             answer = String.format("%.2f", result);
             display.setText(answer);
-
 
         } else if (operations == "-") {
             result = firstNumber - secondNumber;
@@ -176,7 +145,7 @@ public class CalculatorLogic {
             display.setText(answer);
 
         } else if (operations == "%") {
-            result = firstNumber / 100 + secondNumber/secondNumber -1;
+            result = firstNumber / 100 + secondNumber / secondNumber - 1;
             answer = String.format("%.2f", result);
             display.setText(answer);
         }

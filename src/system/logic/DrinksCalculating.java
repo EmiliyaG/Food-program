@@ -19,7 +19,7 @@ public class DrinksCalculating {
     public void setDrinks() {
         JTextField txtQuantity = new JTextField();
         txtQuantity.setBounds(137, 274, 102, 20);
-        orderScreen.foodAndBevaragesPanel.add(txtQuantity);
+        orderScreen.backgroundPanel.add(txtQuantity);
         txtQuantity.setText("");
         txtQuantity.setColumns(10);
 
