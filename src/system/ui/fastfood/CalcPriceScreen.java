@@ -1,5 +1,6 @@
 package system.ui.fastfood;
 
+import system.logic.foodlogic.Calculating;
 import system.ui.fastfood.OrderScreen;
 
 import java.awt.Color;
@@ -12,7 +13,7 @@ public class CalcPriceScreen {
     public JLabel totalTaxPrice;
     public JCheckBox homeDelivery;
     public JLabel deliveryPrice, drinksPrice, mealsPrice;
-
+private Calculating calculating;
     public void setOrderScreen(OrderScreen orderScreen) {
         this.orderScreen = orderScreen;
     }
@@ -84,6 +85,7 @@ public class CalcPriceScreen {
         totalTax.setFont(new Font("Tahoma", Font.PLAIN, 14));
         totalTax.setBounds(637, 413, 78, 25);
         orderScreen.backgroundPanel.add(totalTax);
+
     }
 
     private void makeTotalTaxPrice() {

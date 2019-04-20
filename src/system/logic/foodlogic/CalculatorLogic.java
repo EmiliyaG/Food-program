@@ -65,6 +65,7 @@ public class CalculatorLogic {
 
     public void btnDotSelected() {
         display.setText(String.valueOf(firstNumber = Double.parseDouble(display.getText() + ".")));
+        operations = ".";
     }
 
     public void btnPlusSelected() {
@@ -120,7 +121,6 @@ public class CalculatorLogic {
     }
 
     public void operations() {
-        String answer;
         secondNumber = Double.parseDouble(display.getText());
         if (operations == "+") {
             result = firstNumber + secondNumber;

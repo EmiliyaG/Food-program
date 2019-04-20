@@ -16,10 +16,16 @@ public class Calculating {
     private CalcPriceScreen calcPriceScreen;
     public double priceOfHomeDelivery = 3.00;
     public double allPriceOfFood;
-    public double allPrice;
+    private double allPrice;
+    public String allPriceAsString;
+    public String numberAsString;
 
     public void setProductsScreen(ProductsScreen productsScreen) {
         this.productsScreen = productsScreen;
+    }
+
+    public void setCalcPriceScreen(CalcPriceScreen calcPriceScreen) {
+        this.calcPriceScreen = calcPriceScreen;
     }
 
     public void calcPriceOfDrinks() {
@@ -57,6 +63,8 @@ public class Calculating {
         double allPriceFries = fries * priceOfFries;
 
         allPriceOfFood = allPriceBurger + allPricePizza + allPriceHotDog + allPriceFries;
+        String foodPriceAsString = Double.toString(allPriceOfFood);
+        calcPriceScreen.mealsPrice.setText(foodPriceAsString);
     }
 
     public void calcHomeDelivery() {
@@ -65,9 +73,12 @@ public class Calculating {
         } else {
             priceOfHomeDelivery = 0;
         }
+        numberAsString = Double.toString(priceOfHomeDelivery);
+        calcPriceScreen.deliveryPrice.setText(numberAsString);
     }
 
     public void calcAllPrice() {
         allPrice = allPriceOfDrinks + allPriceOfFood + priceOfHomeDelivery;
+        allPriceAsString = Double.toString(allPrice);
     }
 }

@@ -54,6 +54,10 @@ public class OrderScreen extends JFrame {
 
         this.calculating = new Calculating();
         calculating.setProductsScreen(this.productsScreen);
+        calculating.setCalcPriceScreen(this.calcPriceScreen);
+        calculating.calcAllPrice();
+        calculating.calcHomeDelivery();
+//calcPriceScreen.totalTaxPrice.setText(calculating.allPrice);
 
         makeBtnTotal();
         makeBtnClear();
