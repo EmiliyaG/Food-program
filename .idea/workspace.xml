@@ -2,25 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84d8159-0ce3-4c43-8278-278abf274332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/system/ui/MenuDesign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/system/ui/ProductsScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/system/logic/foodlogic/Calculating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/fastfood/data/DrinksRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/fastfood/data/FoodRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/fastfood/logic/OrderScreenLogic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/data/ProductsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Food program/system/data/ProductsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/CalculatorLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Food program/system/logic/CalculatorLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/DrinksCalculating.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Food program/system/logic/DrinksCalculating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Food program/system/ui/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/MenuScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/RunApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/Calculatooorr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/Design.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/FoodAndBevarages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/Panels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/TotalPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/foodapp/partOfDesign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Food program/system/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/data/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/data/ProductsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/CalculatorLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/DrinksCalculating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/FoodCalculating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/logic/OrderScreenLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/CalcPriceScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/MenuDesign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/OrderScreen$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/OrderScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/data/ProductsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/data/ProductsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/logic/CalculatorLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/logic/CalculatorLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/logic/DrinksCalculating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/logic/DrinksCalculating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/ui/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/ui/MenuScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/ui/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/OrderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Food program/system/ui/ProductsScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RunApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/Calculatooorr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/Design.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/FoodAndBevarages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/Panels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/TotalPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/foodapp/partOfDesign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/data/fooddata/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/data/ProductsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/logic/CalculatorLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/logic/foodlogic/CalculatorLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/logic/DrinksCalculating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/logic/FoodCalculating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/logic/OrderScreenLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/fastfood/CalcPriceScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ui/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ui/MenuDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/fastfood/MenuDesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ui/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/fastfood/OrderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ui/ProductsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/ui/fastfood/ProductsScreen.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +57,7 @@
     <session id="-1282266980">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.143" value="1" />
           <entry key="project.open.time.155" value="1" />
@@ -53,23 +77,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="129" />
+          <entry key="java" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="129" />
+          <entry key="JAVA" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="java" value="8939" />
+          <entry key="java" value="10121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8939" />
+          <entry key="JAVA" value="10121" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -78,107 +102,101 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="82">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/ui/OrderScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/OrderScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+            <state relative-caret-position="108">
+              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1656">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5750#5751#0" expanded="true" />
-                <element signature="e#5780#5781#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/CalcPriceScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/system/ui/ProductsScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/CalculatorLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+            <state relative-caret-position="27">
+              <caret line="66" column="99" selection-start-line="66" selection-start-column="99" selection-end-line="66" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/ui/Calculator.java">
+        <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/MenuDesign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1514#1515#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/ui/MenuDesign.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/system/data/fooddata/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="162">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/Calculating.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/data/Product.java">
+        <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/OrderScreenLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="108">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/data/ProductsRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/ProductsScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="81">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,7 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/foodapp.java" />
         <option value="$PROJECT_DIR$/src/foodapp/Calculator.java" />
         <option value="$PROJECT_DIR$/src/foodapp/Calculator/obsht.java" />
         <option value="$PROJECT_DIR$/src/Idk/Panelllllls.java" />
@@ -225,23 +242,32 @@
         <option value="$PROJECT_DIR$/src/nzveche/Run.java" />
         <option value="$PROJECT_DIR$/src/system/data/ProductsRepossitory.java" />
         <option value="$PROJECT_DIR$/src/system/data/ProducctsRepository.java" />
-        <option value="$PROJECT_DIR$/src/system/data/Product.java" />
         <option value="$PROJECT_DIR$/src/system/App.java" />
         <option value="$PROJECT_DIR$/src/system/logic/FoodRepository.java" />
-        <option value="$PROJECT_DIR$/src/system/logic/OrderScreenLogic.java" />
         <option value="$PROJECT_DIR$/src/fastfood/logic/OrderScreenLogic.java" />
         <option value="$PROJECT_DIR$/src/fastfood/ui/OrderScreen1.java" />
         <option value="$PROJECT_DIR$/src/fastfood/ui/OrdersScreen.java" />
         <option value="$PROJECT_DIR$/src/system/logic/FoodCalculating.java" />
         <option value="$PROJECT_DIR$/src/system/ui/MenuScreen.java" />
-        <option value="$PROJECT_DIR$/src/system/logic/DrinksCalculating.java" />
         <option value="$PROJECT_DIR$/src/system/logic/CalculatorLogic.java" />
         <option value="$PROJECT_DIR$/src/system/ui/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java" />
         <option value="$PROJECT_DIR$/src/system/ui/MenuDesign.java" />
-        <option value="$PROJECT_DIR$/src/system/data/ProductsRepository.java" />
-        <option value="$PROJECT_DIR$/src/system/ui/OrderScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/logic/OrderScreenLogic.java" />
+        <option value="$PROJECT_DIR$/src/system/data/Product.java" />
         <option value="$PROJECT_DIR$/src/system/ui/ProductsScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/OrderScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/logic/DrinksCalculating.java" />
+        <option value="$PROJECT_DIR$/src/system/data/ProductsRepository.java" />
+        <option value="$PROJECT_DIR$/src/system/logic/foodlogic/CalculatorLogic.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/fastfood/CalcPriceScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/fastfood/MenuDesign.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/fastfood/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/system/logic/foodlogic/DrinksCalculating.java" />
+        <option value="$PROJECT_DIR$/src/system/data/fooddata/ProductsRepository.java" />
+        <option value="$PROJECT_DIR$/src/system/logic/foodlogic/Calculating.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/fastfood/ProductsScreen.java" />
+        <option value="$PROJECT_DIR$/src/system/ui/fastfood/OrderScreen.java" />
       </list>
     </option>
   </component>
@@ -288,6 +314,14 @@
               <item name="Food program" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="fooddata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Food program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Food program" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,7 +329,23 @@
               <item name="Food program" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="foodlogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Food program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Food program" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Food program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Food program" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fastfood" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,22 +355,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555716400560" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555722976783" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="system.logic" />
+      <recent name="system.ui" />
       <recent name="fastfood" />
       <recent name="fastfood.logic" />
       <recent name="system" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="system.data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\Food program\src\fastfood\ui" />
       <recent name="C:\Users\User\IdeaProjects\Food program\src\fastfood" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="system.data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,9 +479,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13239075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17802057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -438,7 +489,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33647376" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -457,7 +508,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17866324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16323908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,7 +517,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34724092" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33647376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,8 +544,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/foodapp/Calculator.java" />
-    <entry file="file://$PROJECT_DIR$/src/loginform/loginDesign.java" />
     <entry file="file://$PROJECT_DIR$/src/loginform/Register.java" />
     <entry file="file://$PROJECT_DIR$/src/loginform/Login.java" />
     <entry file="file://$PROJECT_DIR$/src/loginform/ForgotPassword.java" />
@@ -531,16 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="19" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/foodapp/TotalPrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -599,60 +638,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/logic/OrderScreenLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/logic/DrinksCalculating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/logic/FoodCalculating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/system/ui/MenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="145" column="7" lean-forward="true" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/logic/CalculatorLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#1953#1954#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#3245#3246#0" expanded="true" />
-            <element signature="e#3282#3283#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,82 +659,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ui/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ui/CalcPriceScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/foodapp/TotalPrice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="1206">
+          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ui/MenuDesign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/data/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/FoodCalculating.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/data/ProductsRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/system/data/fooddata/ProductsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="162">
+          <caret line="6" column="2" selection-start-column="2" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/data/fooddata/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/DrinksCalculating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="72" selection-end-line="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ui/OrderScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/ProductsScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5750#5751#0" expanded="true" />
-            <element signature="e#5780#5781#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ui/ProductsScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/OrderScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        <state relative-caret-position="108">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/MenuDesign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1656">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/ui/fastfood/CalcPriceScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/OrderScreenLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/Calculating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/system/logic/foodlogic/CalculatorLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="66" column="99" selection-start-line="66" selection-start-column="99" selection-end-line="66" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
