@@ -12,7 +12,8 @@ public class LoginForm {
     private JButton createNewAccountButton;
     private JButton forgotPasswordButton;
     private App app;
-    private RegisterForm registerForm;
+    private system.ui.loginscreen.RegisterForm registerForm;
+    private system.ui.loginscreen.ForgotPasswordForm forgotPasswordForm;
 
     public void setApp(App app) {
         this.app = app;
@@ -50,6 +51,8 @@ public class LoginForm {
         createNewAccountButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                registerForm = new system.ui.loginscreen.RegisterForm();
+                registerForm.createForm();
 
             }
         });
@@ -57,8 +60,8 @@ public class LoginForm {
         forgotPasswordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                registerForm = new RegisterForm();
-                registerForm.createForm();
+                forgotPasswordForm = new system.ui.loginscreen.ForgotPasswordForm();
+                forgotPasswordForm.createForm();
             }
         });
         panel.add(lblUsername);
@@ -79,9 +82,9 @@ public class LoginForm {
     private void implementBtnsAction() {
         loginButton.addActionListener(e -> {
         });
-        createNewAccountButton.addActionListener(e -> createNewAccountButton.addActionListener(arg0 -> new RegisterForm()));
+        createNewAccountButton.addActionListener(e -> createNewAccountButton.addActionListener(arg0 -> new system.ui.loginscreen.RegisterForm()));
 
-        forgotPasswordButton.addActionListener(e -> createNewAccountButton.addActionListener(arg0 -> new ForgotPasswordForm()));
+        forgotPasswordButton.addActionListener(e -> forgotPasswordButton.addActionListener(arg0 -> new system.ui.loginscreen.ForgotPasswordForm()));
 
 
     }
