@@ -7,10 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class RegisterForm {
 //    private JTextField usernameField;
@@ -79,18 +76,36 @@ public void setApp(system.App app) {
         implementBtnsAction();
 
     }
+
     private void savingTheRegisterInfo (){
-        File fileWithUsersInformation = new File("informationWithUsersInfo.txt");
         try {
-            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileWithUsersInformation, true)));
-//            FileWriter writer = new FileWriter("information.txt");
-//            writer.write(getClass().getFields(usernameField));
-            writer.flush();
-            writer.close();
+            PrintStream printStream = new PrintStream("informationWithUsers.txt");
+            printStream.println(registerData.usernameField);
+            printStream.println(registerData.nameField);
+            printStream.println(registerData.answerToSecretQuestion);
+            printStream.println(registerData.passwordField);
+            printStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-        catch (Exception e){
-            System.out.println("Fill in all the fields.");
-        }
+//        File fileWithUsersInformation = new File("informationWithUsersInfo.txt");
+//        try {
+//
+//            PrintWriter pw= new PrintWriter(fileWithUsersInformation);
+//            pw.println(registerButton);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        try {
+//            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileWithUsersInformation, true)));
+////            FileWriter writer = new FileWriter("information.txt");
+////            writer.write(getClass().getFields(usernameField));
+//            writer.flush();
+//            writer.close();
+//        }
+//        catch (Exception e){
+//            System.out.println("Fill in all the fields.");
+//        }
     }
     private void implementBtnsAction() {
         registerButton.addActionListener(new ActionListener() {
@@ -99,6 +114,7 @@ public void setApp(system.App app) {
 
             }
         });
+
 
     }
 
