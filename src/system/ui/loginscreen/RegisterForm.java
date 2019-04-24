@@ -79,7 +79,7 @@ public void setApp(system.App app) {
 
     private void savingTheRegisterInfo (){
         try {
-            PrintStream printStream = new PrintStream("informationWithUsers.txt");
+            PrintStream printStream = new PrintStream("D:\\Проект фуудпрограм\\IntelliinformationWithUsers.txt");
             printStream.println(registerData.usernameField);
             printStream.println(registerData.nameField);
             printStream.println(registerData.answerToSecretQuestion);
