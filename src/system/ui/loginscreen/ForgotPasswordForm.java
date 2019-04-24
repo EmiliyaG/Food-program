@@ -66,20 +66,12 @@ public class ForgotPasswordForm {
         }
 
         private void implementBtnsAction () {
-            showPasswordButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
 
+                    backButton.addActionListener(e -> backButton.addActionListener(arg0 -> new system.ui.loginscreen.LoginForm()));
                 }
-            });
-            backButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
+            }
 
-                }
-            });
 
-        }
-    }
+
 
 
