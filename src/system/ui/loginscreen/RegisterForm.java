@@ -18,6 +18,7 @@ public class RegisterForm {
 //    private JTextField answerToSecretQuestion;
     private JButton registerButton;
     private RegisterData registerData;
+    private system.App app;
     //za da polzvash promenlivite or RegisterData pishtesh register.promenliva...
     public void setRegisterData(RegisterData registerData){
         this.registerData=registerData;
@@ -34,7 +35,9 @@ public class RegisterForm {
 //            }
 //        });
 //}
-
+public void setApp(system.App app) {
+    this.app = app;
+}
     public void createForm() {
         JFrame frame = new JFrame("RegistrationForm");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -52,6 +55,13 @@ public class RegisterForm {
         JTextField txtPassword = new JTextField(20);
         JTextField txtAnswerToSecretQuestion = new JTextField(20);
         registerButton = new JButton("Register");
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app = new system.App();
+                app.callApp();
+            }
+        });
         panel.add(lblUsername);
         panel.add(txtUsername);
         panel.add(lblName);
